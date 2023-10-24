@@ -74,7 +74,7 @@
 			$( document ).ready(function() {
 				map = L.map("map-canvas", {minZoom: 12}).setView([45.4375 , 12.334], 15);
 				baseLayer = new L.TileLayer(
-					'https://{s}.tiles.mapbox.com/v3/bennlich.map-8ds9rdrc/{z}/{x}/{y}.png',
+						'https://api.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoidmVuaWNlcHJvamVjdGNlbnRlciIsImEiOiJjbG8ycHh0YnMxem1iMnJxb2d6em5jYmJ3In0.GTy8EsQFFJWEPWH8Ifr0Ag',
 					{ attribution: 'Map tiles © MapBox' }
 				).addTo(map);
 				L.control.scale().addTo(map);
